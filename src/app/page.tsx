@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { LogoutButton } from "./logout-button";
@@ -51,7 +52,13 @@ export default async function Home() {
           </div>
         </dl>
 
-        <div className="mt-6">
+        <div className="mt-6 flex items-center gap-3">
+          <Link
+            href="/ingesta"
+            className="rounded-md bg-zinc-900 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
+          >
+            Importar RCV
+          </Link>
           <LogoutButton />
         </div>
       </div>

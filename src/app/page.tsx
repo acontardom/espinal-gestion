@@ -60,6 +60,12 @@ export default async function Home() {
             Clasificar
           </Link>
           <Link
+            href="/cuadre"
+            className="rounded-md bg-zinc-900 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
+          >
+            Cuadre
+          </Link>
+          <Link
             href="/ingesta"
             className="rounded-md bg-zinc-900 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
           >
